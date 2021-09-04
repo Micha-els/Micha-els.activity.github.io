@@ -1,0 +1,324 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+header {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    padding: 60px;
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custom-font {
+    font-family: 'playfair display', serif;
+}
+.row .banner-heading {
+    width: 30%;
+    font-size: 6rem;
+    font-style: italic;
+}
+.row .banner-text {
+    width: 70%;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: white;
+    padding: 30px;
+    color: black;
+}
+.annon-section {
+    background-color: #d9b1b3;
+    color: white;
+    width: 100%;
+    padding: 80px 60px 100px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.annon {
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.annon span {
+    font-size: 6rem;
+    line-height: 0;
+}
+.annon-section p {
+    width: 70%;
+    font-size: 1.1rem;
+}
+.gallery {
+    width: 100%;
+}
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+}
+.img-container{
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gallery .gallery-img-1 {
+    background-image: url(../img/gallery-1.jpeg);
+}
+.gallery .gallery-img-2 {
+    background-image: url(../img/gallery-2.jpeg);
+}
+.gallery .gallery-img-3 {
+    background-image: url(../img/gallery-3.jpeg);
+}
+.gallery .gallery-img-4 {
+    background-image: url(../img/gallery-4.jpeg);
+}
+.gallery .gallery-img-5 {
+    background-image: url(../img/gallery-5.jpeg);
+}
+.gallery .gallery-img-6 {
+    background-image: url(../img/gallery-6.jpeg);
+}
+.coming-soon {
+    background-color: #d9b1b3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    color: white;
+}
+.coming-soon .coming-soon-heading{
+    font-size: 5rem;
+    font-style: italic;
+}
+.coming-soon-form .input-row {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.input-container {
+    padding: 5px;
+    
+}
+.input-container .text-input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+ .input-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+.philosophy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.philosophy .lead-img {
+    display: flex;
+    width: 25%;
+    height: 550px;
+    padding: 50px;
+    
+}
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.paragraph p {
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 60px 80px 20px 0;
+}
+.paragraph h5 {
+    font-family: 'Alission', cursive;
+    text-align: justify;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+.spring-collection .spring-collection-heading{
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.slide-row {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    
+}
+.slide-row .slide-img{
+    width: 95%;
+    gap: 10px;
+}
+.slide-container{
+    display: flex;
+    width: 10%;
+    gap: 5px;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sample-pdt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 80px 50px;
+}
+.sample-img{
+    display: flex;
+    align-self: center;
+    width: 70%;
+    justify-content: left;
+    gap: 20px;
+}
+.sample-img .sample{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    justify-content: left;
+}
+
+.sample-pdt .sample-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+.sample-order p{
+    font-size: 1.2rem;
+    width: 70%;
+}
+.sample-order .input-btn{
+    border: none;
+    border-radius: 20px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.suscribe-img-container {
+    display: flex;
+    height: 450px;
+    width: 50%;
+}
+.suscribe-img-container .suscribe-img {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+}
+.subscribe-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.subscribe-form .subscribe-msg{
+    font-size: 5rem;
+    font-style: italic;
+    color: black;
+}
+.subscribe-form .input-row {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.subscribe-form .input-container .text-input {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 0;
+}
+.subscribe-form .input-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+.social-img {
+    margin: 30px 0;
+    margin-bottom: 25px;
+}
+.social-img .twitter {
+    padding: 0 20px;
+}
+.h-rule{
+    /*color: #d9b1b3;*/
+    width: 80%;
+    height: 10px;
+    background: #d9b1b3;
+    margin-top: 100px;
+    
+}
+.sub-text{
+     padding: 20px;
+     text-align: center;
+     font-size: 1rem;
+     width: 60%;
+}
