@@ -9,29 +9,32 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
 }
+
 .row{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
-.row-column{
+
+.flex-100r{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-header {
-    width: 100%;
-    height: 120vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 120vh;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    padding: 60px;
+    padding: 30px 60px 60px 60px;
     background-image: url(../img/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,25 +43,31 @@ header {
     font-family: 'playfair display', serif;
 }
 .row .banner-heading {
-    width: 30%;
-    font-size: 6rem;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    font-size: 6.5rem;
     font-style: italic;
+    justify-content: center;
+    align-items: center;
 }
 .row .banner-text {
-    width: 70%;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 70%;
     font-size: 1rem;
     font-weight: normal;
     background-color: white;
-    padding: 30px;
+    padding: 60px 30px;
     color: black;
 }
 .annon-section {
     background-color: #d9b1b3;
     color: white;
-    width: 100%;
     padding: 80px 60px 100px 60px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 .annon {
     width: 80%;
@@ -72,7 +81,7 @@ header {
     line-height: 0;
 }
 .annon-section p {
-    width: 70%;
+    width: 55%;
     font-size: 1.1rem;
 }
 .gallery {
@@ -86,10 +95,11 @@ header {
     display: flex;
     flex-grow: 1;
     overflow: hidden;
-    height: 450px;
+    height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 .gallery .gallery-img-1 {
     background-image: url(../img/gallery-1.jpeg);
@@ -111,11 +121,12 @@ header {
 }
 .coming-soon {
     background-color: #d9b1b3;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 60px 0;
     color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .coming-soon .coming-soon-heading{
     font-size: 5rem;
@@ -133,84 +144,95 @@ header {
 .input-container .text-input {
     border: none;
     border-radius: 20px;
-    padding: 10px;
-    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
 }
 
  .input-btn {
     border: none;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 0.8rem 2.5rem;
     font-size: 0.8rem;
+    font-weight: bold;
     background-color: black;
     color: white;
-    width: fit-content;
+    flex-basis: content;
+    cursor: pointer;
+}
+.input-btn:hover{
+    background-color: grey;
 }
 .philosophy {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-
 }
 .philosophy .lead-img {
     display: flex;
-    width: 25%;
-    height: 550px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    height: 100vh;
     padding: 50px;
     
 }
 .paragraph {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 70%;
 }
 .paragraph p {
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 60px 80px 20px 0;
 }
-.paragraph h5 {
-    font-family: 'Alission', cursive;
-    text-align: justify;
-    font-size: 1.4rem;
-    padding: 0;
+.spring-collection{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #d9b1b3;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 80px 30px;
 }
-
 .spring-collection .spring-collection-heading{
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-style: italic;
+    text-align: center;
+    color: white;
 }
 
 .slide-row {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    flex-basis: 100%;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: 1rem 3rem;
+    gap: 1rem;
     margin-bottom: 25px;
-    
 }
-.slide-row .slide-img{
-    width: 95%;
-    gap: 10px;
-}
-.slide-container{
+.slide-container {
     display: flex;
-    width: 10%;
-    gap: 5px;
     flex-grow: 1;
+    flex-basis: 20%;
     overflow: hidden;
-    height: 300px;
+    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
+}
+.slide-row .slide-img-1{
+    background-image: url(../img/slide-1.jpg);
+}
+.slide-row .slide-img-2{
+    background-image: url(../img/slide-2.jpg);
+}
+.slide-row .slide-img-3{
+    background-image: url(../img/slide-3.jpg);
+}
+.slide-row .slide-img-4{
+    background-image: url(../img/slide-4.jpg);
 }
 .sample-pdt {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     gap: 50px;
     padding: 80px 50px;
 }
@@ -244,15 +266,15 @@ header {
     border: none;
     border-radius: 20px;
     padding: 15px 40px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: black;
     color: white;
     width: fit-content;
 }
+.input-btn:hover{
+    background-color: #d9b1b3;
+}
 .subscribe {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .suscribe-img-container {
@@ -267,8 +289,9 @@ header {
     padding: 0px;
 }
 .subscribe-form {
-    width: 50%;
     display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
@@ -301,6 +324,9 @@ header {
     color: white;
     width: fit-content;
 }
+.subscribe-form .input-btn:hover {
+    background-color: #d9b1b3;
+}
 .social-img {
     margin: 30px 0;
     margin-bottom: 25px;
@@ -309,12 +335,10 @@ header {
     padding: 0 20px;
 }
 .h-rule{
-    /*color: #d9b1b3;*/
     width: 80%;
     height: 10px;
     background: #d9b1b3;
-    margin-top: 100px;
-    
+    margin-top: 100px; 
 }
 .sub-text{
      padding: 20px;
