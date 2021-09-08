@@ -159,7 +159,7 @@ header {
     flex-basis: content;
     cursor: pointer;
 }
-.input-btn:hover{
+.input-container .input-btn:hover{
     background-color: grey;
 }
 .philosophy {
